@@ -18,12 +18,12 @@ function Brand() {
 
 function Header() {
   const [open, setOpen] = useState(false)
-  return <header className="header" id="top"><Brand /><button className="menu" onClick={() => setOpen(!open)} aria-expanded={open} aria-controls="nav">{open ? 'Close' : 'Menu'}</button><nav id="nav" className={open ? 'open' : ''} onClick={() => setOpen(false)}><a href="#services">Services</a><a href="#approach">Approach</a><a href="#results">Results</a><a className="button dark" href="#contact">Let’s talk <span>↗</span></a></nav></header>
+  return <header className="header" id="top"><Brand /><button className="menu" onClick={() => setOpen(!open)} aria-expanded={open} aria-controls="nav">{open ? 'Close' : 'Menu'}</button><nav id="nav" className={open ? 'open' : ''} onClick={() => setOpen(false)}><a href="#services">Services</a><a href="#approach">Approach</a><a className="button dark" href="mailto:hello@mooregrowthgroup.com">Let’s talk <span>↗</span></a></nav></header>
 }
 
 function Hero() {
   return <main><section className="hero"><div className="hero-copy"><p className="eyebrow">Strategy that builds what’s next.</p><h1>Clarity.<br />Strategy.<br /><em>Growth.</em></h1><p className="lede">We partner with founders and leadership teams to turn big goals into measurable progress—through strategy, systems, and smart execution.</p><a className="text-link" href="#contact">Let’s build your plan <span>↗</span></a></div><div className="hero-art" role="img" aria-label="A warm, editorial workspace"><div className="arch"></div><div className="strategy-card"><span>Move with</span><strong>intention.</strong><small>Strategy / Systems / Growth</small></div><div className="desk-line"></div></div></section>
-  <section className="credibility" aria-labelledby="cred-title"><p id="cred-title">Trusted strategic perspective across industries</p><div className="industry-list"><span>Beauty</span><span>Automotive</span><span>Home Services</span><span>Apparel</span><span>SaaS</span></div><small>Industry experience shown—not client logos or endorsements.</small></section>
+  <section className="credibility" aria-labelledby="cred-title"><p id="cred-title">Trusted strategic perspective across industries</p><div className="industry-list"><span>Beauty</span><span>Automotive</span><span>Home Services</span><span>Apparel</span><span>SaaS</span></div></section>
   <Services /><Approach /><Results /><Contact /></main>
 }
 
