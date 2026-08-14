@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { createRoot } from 'react-dom/client'
 import './styles.css'
+import heroImage from '../hero-image.png'
 
 const services = [
   ['01', 'Growth Strategy', 'Clear positioning, market insight, and focused plans built to drive real traction.'],
@@ -22,7 +23,7 @@ function Header() {
 }
 
 function Hero() {
-  return <main><section className="hero"><div className="hero-copy"><p className="eyebrow">Strategy that builds what’s next.</p><h1>Clarity.<br />Strategy.<br /><em>Growth.</em></h1><p className="lede">We partner with founders and leadership teams to turn big goals into measurable progress—through strategy, systems, and smart execution.</p><a className="text-link" href="#contact">Let’s build your plan <span>↗</span></a></div><div className="hero-art" role="img" aria-label="A warm, editorial workspace"><div className="arch"></div><div className="strategy-card"><span>Move with</span><strong>intention.</strong><small>Strategy / Systems / Growth</small></div><div className="desk-line"></div></div></section>
+  return <main><section className="hero"><div className="hero-copy"><p className="eyebrow">Strategy that builds what’s next.</p><h1>Clarity.<br />Strategy.<br /><em>Growth.</em></h1><p className="lede">We partner with founders and leadership teams to turn big goals into measurable progress—through strategy, systems, and smart execution.</p><a className="text-link" href="#contact">Let’s build your plan <span>↗</span></a></div><div className="hero-art"><img src={heroImage} alt="Moore Growth Group" /></div></section>
   <section className="credibility" aria-labelledby="cred-title"><p id="cred-title">Trusted strategic perspective across industries</p><div className="industry-marquee" aria-label="Beauty, Automotive, Home Services, Apparel, SaaS"><div className="industry-track"><div className="industry-list"><span>Beauty</span><span>Automotive</span><span>Home Services</span><span>Apparel</span><span>SaaS</span></div><div className="industry-list" aria-hidden="true"><span>Beauty</span><span>Automotive</span><span>Home Services</span><span>Apparel</span><span>SaaS</span></div></div></div></section>
   <Services /><Approach /><Results /><Contact /></main>
 }
