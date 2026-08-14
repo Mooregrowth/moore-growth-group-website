@@ -23,7 +23,7 @@ function Header() {
 
 function Hero() {
   return <main><section className="hero"><div className="hero-copy"><p className="eyebrow">Strategy that builds what’s next.</p><h1>Clarity.<br />Strategy.<br /><em>Growth.</em></h1><p className="lede">We partner with founders and leadership teams to turn big goals into measurable progress—through strategy, systems, and smart execution.</p><a className="text-link" href="#contact">Let’s build your plan <span>↗</span></a></div><div className="hero-art" role="img" aria-label="A warm, editorial workspace"><div className="arch"></div><div className="strategy-card"><span>Move with</span><strong>intention.</strong><small>Strategy / Systems / Growth</small></div><div className="desk-line"></div></div></section>
-  <section className="credibility" aria-labelledby="cred-title"><p id="cred-title">Trusted strategic perspective across industries</p><div className="industry-list"><span>Beauty</span><span>Automotive</span><span>Home Services</span><span>Apparel</span><span>SaaS</span></div></section>
+  <section className="credibility" aria-labelledby="cred-title"><p id="cred-title">Trusted strategic perspective across industries</p><div className="industry-marquee" aria-label="Beauty, Automotive, Home Services, Apparel, SaaS"><div className="industry-track"><div className="industry-list"><span>Beauty</span><span>Automotive</span><span>Home Services</span><span>Apparel</span><span>SaaS</span></div><div className="industry-list" aria-hidden="true"><span>Beauty</span><span>Automotive</span><span>Home Services</span><span>Apparel</span><span>SaaS</span></div></div></div></section>
   <Services /><Approach /><Results /><Contact /></main>
 }
 
@@ -40,7 +40,7 @@ function Results() {
 }
 
 function Contact() {
-  return <section className="contact" id="contact"><p className="eyebrow">Your next chapter</p><div><h2>Ready to grow<br />with a plan?</h2><div><p>Let’s talk about your business, your goals, and how we can help you get there.</p><a className="button light" href="mailto:hello@mooregrowthgroup.com">Start a conversation <span>↗</span></a><small>Please confirm preferred contact email before launch.</small></div></div></section>
+  return <section className="contact" id="contact"><p className="eyebrow">Your next chapter</p><div><h2>Ready to grow<br />with a plan?</h2><div><p>Let’s talk about your business, your goals, and how we can help you get there.</p><a className="button light" href="mailto:hello@mooregrowthgroup.com">Start a conversation <span>↗</span></a></div></div></section>
 }
 
 function Footer() {
